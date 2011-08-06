@@ -4,7 +4,7 @@
  * Plugin Name: Giftköder Radar
  * Plugin URI: http://www.giftkoeder-radar.com
  * Description: Dieses Plugin zeigt dir mit Hilfe einer übersichtlichen Karte alle aktuellen und archivierten Fundorte der Plattform <a href="http://www.giftkoeder-radar.com">Gitfköder Radar</a> direkt in deinem Blog an. Bitte beachte, dass du zum Betrieb dieses Plugins einen <a href="http://www.giftkoeder-radar.com/blog/2011/07/giftkoderradarapi-offenes-okosystem-fur-entwickler/">kostenlosen API Schlüssel</a> benötigst.
- * Version: 1.0
+ * Version: 1.1
  * Author: MountainGrafix
  * Author URI: http://www.facebook.com/MountainGrafix
  */
@@ -24,7 +24,7 @@ if (!defined("WP_PLUGIN_URL")) {
  * @copyright MountainGrafix <http://www.mountaingrafix.eu>
  */
 function GkRadar_Head() {
-  	$css = WP_PLUGIN_URL . "/gkradar/gkradar.css";
+  	$css = WP_PLUGIN_URL . "/giftkoederradar/gkradar.css";
   
   	if (file_exists(STYLESHEETPATH . "/gkradar.css")) {
   		$css_url = get_bloginfo("stylesheet_directory") . "/gkradar.css";
@@ -81,7 +81,7 @@ function GkRadar_Map($param) {
  * @copyright MountainGrafix <http://www.mountaingrafix.eu>
  */
 function GkRadar_Footer() {
-	echo '<script type="text/javascript" src="' . WP_PLUGIN_URL. '/gkradar/request.js"></script>';
+	echo '<script type="text/javascript" src="' . WP_PLUGIN_URL. '/giftkoederradar/request.js"></script>';
 }
 
 /**
@@ -142,14 +142,14 @@ function GkRadar_PrintAdminHTML() {
 					<table class="form-table">
 					<tbody>
 					<tr>
-						<th><img style="padding:1px;border:1px solid #333333;" src="<?php echo WP_PLUGIN_URL; ?>/gkradar/images/GKAvatar.png"></th>
+						<th><img style="padding:1px;border:1px solid #333333;" src="<?php echo WP_PLUGIN_URL; ?>/giftkoederradar/images/GKAvatar.png"></th>
 						<td>
 							<p>Fast täglich müssen Hunde elendig verenden, weil brutale Tierquäler ganz bewusst tödliche Fallen auslegt haben. Verhindern kann man das Auslegen dieser Giftköder nicht! Aber es gibt einen wirksamen Schutz und auch <b>DU</b> kannst dabei helfen:</p>
 							<h2>1. Unterstütze diese Initiative auf Facebook</h2>
 							<iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2FGiftkoederRadar&amp;width=550&amp;colorscheme=light&amp;connections=10&amp;stream=false&amp;header=false&amp;height=185" scrolling="no" frameborder="0" style="border:none;overflow:hidden;width:550px;height:185px;" allowTransparency="true"></iframe>
 							<h2>2. Lade dir unsere kostenlose App herunter</h2>
 							<p>Wenn du Besitzer eines <b>iPhone, iPad oder iPod Touch</b> bist, dann lade dir doch bitte unsere <a href="http://itunes.apple.com/de/app/giftkoder-radar/id442902860?mt=8">kostenlose App</a> im AppStore herunter. Mit Hilfe dieser App bist du nicht nur unterwegs stets über aktuelle Gefahren informiert, sondern du hast zudem auch die Möglichkeit andere Hundehalter direkt über die App vor neuen Giftködern zu warnen.</p>
-							<p style="margin-top:15px;"><a href="http://itunes.apple.com/de/app/giftkoder-radar/id442902860?mt=8" title="Giftköder Radar jetzt im AppStore downloaden"><img src="<?php echo WP_PLUGIN_URL; ?>/gkradar/images/appstore.gif"></a></p>
+							<p style="margin-top:15px;"><a href="http://itunes.apple.com/de/app/giftkoder-radar/id442902860?mt=8" title="Giftköder Radar jetzt im AppStore downloaden"><img src="<?php echo WP_PLUGIN_URL; ?>/giftkoederradar/images/appstore.gif"></a></p>
 							<h2>3. Schreibe bitte eine kurze Rezension</h2>
 							<p>Natürlich würden wir uns sehr freuen, wenn du dir nach deinem Download noch kurz Zeit nimmst um <a href="http://ax.itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=442902860">eine kleine Rezension</a> für die App zu schreiben. Das dauert für dich in der Regel nicht mehr als <b>5 Minuten</b>, aber es hilft uns noch viele andere Hundehalter für dieses Projekt zu begeistern. Vielen Dank!</p>
 							<h2>4. Crowdfunding</h2>

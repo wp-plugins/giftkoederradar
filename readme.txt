@@ -4,7 +4,7 @@ Donate link: http://www.giftkoeder-radar.com
 Tags: google, google maps, google maps api, dog, posion, radar
 Requires at least: 2.8
 Tested up to: 3.2.1
-Stable tag: 1.0
+Stable tag: 1.1
 
 Zeigt dir mit Hilfe einer übersichtlichen Karte alle Giftköder-Fundorte in deiner Umgebung an.
 
@@ -30,7 +30,11 @@ Wichtigte Links:
 
 == Changelog ==
 
-= Version 1.0 / 29.11.2011 =
+= Version 1.1 / 06.08.2011 =
+
+* Geänderte Ordnerstruktur
+
+= Version 1.0 / 29.07.2011 =
 
 * Das erste Release des Plugins
 
